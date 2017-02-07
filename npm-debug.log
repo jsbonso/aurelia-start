@@ -1,0 +1,594 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '-g' ]
+2 info using npm@4.1.1
+3 info using node@v6.9.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData http-server
+8 silly fetchNamedPackageData http-server
+9 silly mapToRegistry name http-server
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://npm.nodejs.org.au:5984/registry
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'http-server',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'http-server',
+12 silly mapToRegistry   name: 'http-server',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://npm.nodejs.org.au:5984/registry/http-server
+14 verbose request uri http://npm.nodejs.org.au:5984/registry/http-server
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:20:02 PM
+17 verbose request id d0bfc273dde00673
+18 http request GET http://npm.nodejs.org.au:5984/registry/http-server
+19 http 200 http://npm.nodejs.org.au:5984/registry/http-server
+20 verbose bad json <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+20 verbose bad json <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+20 verbose bad json <head profile="http://gmpg.org/xfn/11">
+20 verbose bad json         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+20 verbose bad json         <title>404 - PAGE NOT FOUND</title>
+20 verbose bad json
+20 verbose bad json 				<!-- Add Slide Outs -->
+20 verbose bad json 				<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+20 verbose bad json 				<script src="/cgi-sys/js/simple-expand.min.js"></script>
+20 verbose bad json
+20 verbose bad json         <style type="text/css">
+20 verbose bad json         body{padding:0;margin:0;font-family:helvetica;}
+20 verbose bad json         #container{margin:20px auto;width:868px;}
+20 verbose bad json         #container #top404{background-image:url('/cgi-sys/images/404top_w.jpg');background-repeat:no-repeat;width:868px;height:168px;}
+20 verbose bad json         #container #mid404{background-image:url('/cgi-sys/images/404mid.gif');background-repeat:repeat-y;width:868px;}
+20 verbose bad json         #container #mid404 #gatorbottom{position:relative;left:39px;float:left;}
+20 verbose bad json         #container #mid404 #xxx{float:left;padding:40px 397px 10px; margin: auto auto -10px auto}
+20 verbose bad json         #container #mid404 #content{float:left;text-align:center;width:868px;}
+20 verbose bad json         #container #mid404 #content #errorcode{font-size:30px;font-weight:800;}
+20 verbose bad json         #container #mid404 #content #banner{margin:20px 0 0 ;}
+20 verbose bad json         #container #mid404 #content #hostedby{font-weight:800;font-size:25px;font-style:italic;margin:20px 0 0;}
+20 verbose bad json         #container #mid404 #content #coupon{color:#AB0000;font-size:22px;font-style:italic;}
+20 verbose bad json         #container #mid404 #content #getstarted a{color:#AB0000;font-size:31px;font-style:italic;font-weight:800;}
+20 verbose bad json         #container #mid404 #content #getstarted {margin:0 0 35px;}
+20 verbose bad json         #container #bottom404{background-image:url('/cgi-sys/images/404bottom.gif');background-repeat:no-repeat;width:868px;height:14px;}
+20 verbose bad json         #container #mid404 #content #faq_container {margin: 5px 0 5px 0; padding: 10px 0 10px 0; clear:both;}
+20 verbose bad json         #container #mid404 #content #accordion{font-size: 90%; width: 650px; min-height: 100px; margin: 0 auto; text-align: center;}
+20 verbose bad json         #container #mid404 #content #accordion ul {text-align: left;}
+20 verbose bad json         #container #mid404 #content #accordion ol {text-align: left;}
+20 verbose bad json 		  #container #mid404 #content #accordion li {font-size: 90%;}
+20 verbose bad json         #container #mid404 #content #accordion p {font-size: 95%; text-align: left;}
+20 verbose bad json         #container #mid404 #content #accordion h3 {font-weight: bold;}
+20 verbose bad json 		  #container #mid404 #content #accordion h4 {font-weight: bold; font-style: italic; text-align: left;}
+20 verbose bad json 		  .content {display:none;}
+20 verbose bad json 		  .first {color: #ff6600;}
+20 verbose bad json 		  .second {color: #3b5998;}
+20 verbose bad json 		  .third {color: #198c19;}
+20 verbose bad json 		  .code { background-color: #e5e5e5; border: 2px solid #ede1d1; padding: 5px 5px 5px 5px; text-align: left;}
+20 verbose bad json 		  .shell{border: 2px solid gray; background-color: black; color: white; text-align: left;}
+20 verbose bad json         </style>
+20 verbose bad json
+20 verbose bad json </head>
+20 verbose bad json <body>
+20 verbose bad json <div id="container">
+20 verbose bad json         <div id="top404"></div>
+20 verbose bad json         <div id="mid404">
+20 verbose bad json                 <div id="xxx"><img src="/cgi-sys/images/x.png" alt="" /></div>
+20 verbose bad json         <div id="content">
+20 verbose bad json             <div id="errorcode">ERROR 404 - PAGE NOT FOUND</div>
+20 verbose bad json               <div id="faq_container">
+20 verbose bad json 					 <div id="accordion">
+20 verbose bad json 					 	<div id="why">
+20 verbose bad json 						 <h3><a class="expander" href=#>Why am I seeing this page?</a></h3>
+20 verbose bad json 							<div class="content">
+20 verbose bad json 									<p>404 means the file is not found. If you have already uploaded the file then the name may be misspelled or it is in a different folder.</p>
+20 verbose bad json 									<h4><u>Other Possible Causes</u></h4>
+20 verbose bad json 									<p>You may get a 404 error for images because you have Hot Link Protection turned on and the domain is not on the list of authorized domains.</p>
+20 verbose bad json 									<p>If you go to your temporary url (http://ip/~username/) and get this error, there maybe a problem with the rule set stored in an .htaccess file. You can try renaming that file to .htaccess-backup and refreshing the site to see if that resolves the issue.</p>
+20 verbose bad json 									<p>It is also possible that you have inadvertently deleted your document root or the your account may need to be recreated. Either way, please contact your web host immediately.</p>
+20 verbose bad json 									<p>Are you using WordPress? See the Section on 404 errors after clicking a link in WordPress.</p>
+20 verbose bad json 							</div>
+20 verbose bad json 						</div>
+20 verbose bad json 						<div id="spell">
+20 verbose bad json 						<h3><a class="expander" href=#>How to find the correct spelling and folder</a></h3>
+20 verbose bad json 							<div class="content">
+20 verbose bad json 								<h4><u>Missing or Broken Files</u></h4>
+20 verbose bad json 								<p>When you get a 404 error be sure to check the URL that you are attempting to use in your browser.This tells the server what resource it should attempt to request.</p>
+20 verbose bad json 									<blockquote class="code">http://example.com/example/Example/help.html</blockquote>
+20 verbose bad json 								<p>In this example the file must be in public_html/example/Example/</p>
+20 verbose bad json 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>e</strong>xample and <strong>E</strong>xample are not the same locations.</p>
+20 verbose bad json 								<p>For addon domains, the file must be in public_html/addondomain.com/example/Example/ and the names are case-sensitive.</p>
+20 verbose bad json 								<h4><u>Broken Image</u></h4>
+20 verbose bad json 								<p>When you have a missing image on your site you may see a box on your page with with a red <span style="color:#FF0000;"><strong>X</strong></span> where the image is missing. Right click on the <span style="color:#FF0000;"><strong>X</strong></span> and choose Properties. The properties will tell you the path and file name that cannot be found.</p>
+20 verbose bad json 								<p>This varies by browser, if you do not see a box on your page with a red <span style="color:#FF0000;"><strong>X</strong></span> try right clicking on the page, then select View Page Info, and goto the Media Tab.</p>
+20 verbose bad json 									<blockquote class="code">http://example.com/cgi-sys/images/banner.PNG</blockquote>
+20 verbose bad json 								<p>In this example the image file must be in public_html/cgi-sys/images/</p>
+20 verbose bad json 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>PNG</strong> and <strong>png</strong> are not the same locations.</p>
+20 verbose bad json 							</div>
+20 verbose bad json 						</div>
+20 verbose bad json 						<div id="wp">
+20 verbose bad json 						<h3><a class="expander" href=#>404 Errors After Clicking WordPress Links</a></h3>
+20 verbose bad json 							<div class="content">
+20 verbose bad json 									<p>When working with WordPress, 404 Page Not Found errors can often occur when a new theme has been activated or when the rewrite rules in the .htaccess file have been altered.</p>
+20 verbose bad json 									<p>When you encounter a 404 error in WordPress, you have two options for correcting it.</p>
+20 verbose bad json 								<h4><u>Option 1: Correct the Permalinks</u></h4>
+20 verbose bad json 									<ol>
+20 verbose bad json 										<li>Log in to WordPress.</li>
+20 verbose bad json 										<li>From the left-hand navigation menu in WordPress, click&nbsp;<strong>Settings</strong> &gt; <strong>Permalinks</strong> (Note the current setting. If you are using a custom structure, copy or save the custom structure somewhere.)</li>
+20 verbose bad json 										<li>Select&nbsp; <strong>Default</strong>.</li>
+20 verbose bad json 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+20 verbose bad json 										<li>Change the settings back to the previous configuration (before you selected Default). Put the custom structure back if you had one.</li>
+20 verbose bad json 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+20 verbose bad json 									</ol>
+20 verbose bad json 								<p>This will reset the permalinks and fix the issue in many cases. If this doesn't work, you may need to edit your .htaccess file directly.</p>
+20 verbose bad json 								<h4><u>Option 2: Modify the .htaccess File</u></h4>
+20 verbose bad json 									<p>Add the following snippet of code<em> </em>to the top of your .htaccess file:</p>
+20 verbose bad json 									<div class="code">
+20 verbose bad json 									<p>
+20 verbose bad json 										# BEGIN WordPress<br>
+20 verbose bad json 										&lt;IfModule mod_rewrite.c&gt;<br>
+20 verbose bad json 										RewriteEngine On<br>
+20 verbose bad json 										RewriteBase /<br>
+20 verbose bad json 										RewriteRule ^index.php$ - [L]<br>
+20 verbose bad json 										RewriteCond %{REQUEST_FILENAME} !-f<br>
+20 verbose bad json 										RewriteCond %{REQUEST_FILENAME} !-d<br>
+20 verbose bad json 										RewriteRule . /index.php [L]<br>
+20 verbose bad json 										&lt;/IfModule&gt;<br>
+20 verbose bad json 										# End WordPress
+20 verbose bad json 									</p>
+20 verbose bad json 									</div>
+20 verbose bad json 								<p>If your blog is showing the wrong domain name in links, redirecting to another site, or is missing images and style, these are all usually related to the same problem: you have the wrong domain name configured in your WordPress blog.</p>
+20 verbose bad json 							</div>
+20 verbose bad json 						</div>
+20 verbose bad json 						<div id="edit_access">
+20 verbose bad json 						<h3><a class="expander" href=#>How to modify your .htaccess file</a></h3>
+20 verbose bad json 							<div class="content">
+20 verbose bad json 								<p>The .htaccess file contains directives (instructions) that tell the server how to behave in certain scenarios and directly affect how your website functions.</p>
+20 verbose bad json 								<p>Redirects and rewriting URLs are two very common directives found in a .htaccess file, and many scripts such as WordPress, Drupal, Joomla and Magento add directives to the .htaccess so those scripts can function.</p>
+20 verbose bad json 								<p>It is possible that you may need to edit the .htaccess file at some point, for various reasons.This section covers how to edit the file in cPanel, but not what may need to be changed.(You may need to consult other articles and resources for that information.)</p>
+20 verbose bad json 								<h4><u>There are Many Ways to Edit a .htaccess File</u></h4>
+20 verbose bad json 									<ul>
+20 verbose bad json 										<li>Edit the file on your computer and upload it to the server via FTP</li>
+20 verbose bad json 										<li>Use an FTP program's Edit Mode</li>
+20 verbose bad json 										<li>Use SSH and a text editor</li>
+20 verbose bad json 										<li>Use the File Manager in cPanel</li>
+20 verbose bad json 									</ul>
+20 verbose bad json 								<p>The easiest way to edit a .htaccess file for most people is through the File Manager in cPanel.</p>
+20 verbose bad json 								<h4><u>How to Edit .htaccess files in cPanel's File Manager</u></h4>
+20 verbose bad json 								<p>Before you do anything, it is suggested that you backup your website so that you can revert back to a previous version if something goes wrong.</p>
+20 verbose bad json 								<h4><u>Open the File Manager</u></h4>
+20 verbose bad json 								<ol>
+20 verbose bad json 									<li>Log into cPanel.</li>
+20 verbose bad json 									<li>In the Files section, click on the <strong>File Manager</strong> icon.</li>
+20 verbose bad json 									<li>Check the box for&nbsp;<strong>Document Root for</strong> and select the domain name you wish to access from the drop-down menu.</li>
+20 verbose bad json 									<li>Make sure&nbsp;<strong>Show Hidden Files (dotfiles)</strong>" is checked.</li>
+20 verbose bad json 									<li>Click&nbsp;<strong>Go</strong>. The File Manager will open in a new tab or window.</li>
+20 verbose bad json 									<li>Look for the .htaccess file in the list of files. You may need to scroll to find it.</li>
+20 verbose bad json 								</ol>
+20 verbose bad json 								<h4><u>To Edit the .htaccess File</u></h4>
+20 verbose bad json 								<ol>
+20 verbose bad json 									<li>Right click on the <strong>.htaccess file</strong> and click&nbsp;<strong>Code Edit</strong> from the menu. Alternatively, you can click on the icon for the .htaccess file and then click on the <strong>Code Editor</strong> icon at the top of the page.</li>
+20 verbose bad json 									<li>A dialogue box may appear asking you about encoding. Just click&nbsp;<strong>Edit</strong> to continue. The editor will open in a new window.</li>
+20 verbose bad json 									<li>Edit the file as needed.</li>
+20 verbose bad json 									<li>Click&nbsp;<strong>Save Changes</strong> in the upper right hand corner when done. The changes will be saved.</li>
+20 verbose bad json 									<li>Test your website to make sure your changes were successfully saved. If not, correct the error or revert back to the previous version until your site works again.</li>
+20 verbose bad json 									<li>Once complete, you can click&nbsp;<strong>Close</strong> to close the File Manager window.</li>
+20 verbose bad json 								</ol>
+20 verbose bad json 							</div>
+20 verbose bad json 						</div>
+20 verbose bad json 					</div>
+20 verbose bad json 				</div>
+20 verbose bad json         </div>
+20 verbose bad json
+20 verbose bad json         <div style="clear:left;"></div>
+20 verbose bad json         </div>
+20 verbose bad json         <div id="bottom404"></div>
+20 verbose bad json </div>
+20 verbose bad json
+20 verbose bad json     <script type="text/javascript">
+20 verbose bad json         $(function () {
+20 verbose bad json             $('.expander').simpleexpand();
+20 verbose bad json             prettyPrint();
+20 verbose bad json         });
+20 verbose bad json     </script>
+20 verbose bad json
+20 verbose bad json </body>
+20 verbose bad json
+20 verbose bad json </html>
+21 error registry error parsing json
+22 verbose headers { server: 'nginx/1.10.3',
+22 verbose headers   date: 'Tue, 07 Feb 2017 10:19:57 GMT',
+22 verbose headers   'content-type': 'text/html',
+22 verbose headers   'transfer-encoding': 'chunked',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'last-modified': 'Thu, 07 Nov 2013 10:20:56 GMT',
+22 verbose headers   'content-encoding': 'gzip' }
+23 silly get cb [ 200,
+23 silly get   { server: 'nginx/1.10.3',
+23 silly get     date: 'Tue, 07 Feb 2017 10:19:57 GMT',
+23 silly get     'content-type': 'text/html',
+23 silly get     'transfer-encoding': 'chunked',
+23 silly get     connection: 'keep-alive',
+23 silly get     'last-modified': 'Thu, 07 Nov 2013 10:20:56 GMT',
+23 silly get     'content-encoding': 'gzip' } ]
+24 silly fetchPackageMetaData SyntaxError: Unexpected token < in JSON at position 0
+24 silly fetchPackageMetaData <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+24 silly fetchPackageMetaData <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+24 silly fetchPackageMetaData <head profile="http://gmpg.org/xfn/11">
+24 silly fetchPackageMetaData         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+24 silly fetchPackageMetaData         <title>404 - PAGE NOT FOUND</title>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData 				<!-- Add Slide Outs -->
+24 silly fetchPackageMetaData 				<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+24 silly fetchPackageMetaData 				<script src="/cgi-sys/js/simple-expand.min.js"></script>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData         <style type="text/css">
+24 silly fetchPackageMetaData         body{padding:0;margin:0;font-family:helvetica;}
+24 silly fetchPackageMetaData         #container{margin:20px auto;width:868px;}
+24 silly fetchPackageMetaData         #container #top404{background-image:url('/cgi-sys/images/404top_w.jpg');background-repeat:no-repeat;width:868px;height:168px;}
+24 silly fetchPackageMetaData         #container #mid404{background-image:url('/cgi-sys/images/404mid.gif');background-repeat:repeat-y;width:868px;}
+24 silly fetchPackageMetaData         #container #mid404 #gatorbottom{position:relative;left:39px;float:left;}
+24 silly fetchPackageMetaData         #container #mid404 #xxx{float:left;padding:40px 397px 10px; margin: auto auto -10px auto}
+24 silly fetchPackageMetaData         #container #mid404 #content{float:left;text-align:center;width:868px;}
+24 silly fetchPackageMetaData         #container #mid404 #content #errorcode{font-size:30px;font-weight:800;}
+24 silly fetchPackageMetaData         #container #mid404 #content #banner{margin:20px 0 0 ;}
+24 silly fetchPackageMetaData         #container #mid404 #content #hostedby{font-weight:800;font-size:25px;font-style:italic;margin:20px 0 0;}
+24 silly fetchPackageMetaData         #container #mid404 #content #coupon{color:#AB0000;font-size:22px;font-style:italic;}
+24 silly fetchPackageMetaData         #container #mid404 #content #getstarted a{color:#AB0000;font-size:31px;font-style:italic;font-weight:800;}
+24 silly fetchPackageMetaData         #container #mid404 #content #getstarted {margin:0 0 35px;}
+24 silly fetchPackageMetaData         #container #bottom404{background-image:url('/cgi-sys/images/404bottom.gif');background-repeat:no-repeat;width:868px;height:14px;}
+24 silly fetchPackageMetaData         #container #mid404 #content #faq_container {margin: 5px 0 5px 0; padding: 10px 0 10px 0; clear:both;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion{font-size: 90%; width: 650px; min-height: 100px; margin: 0 auto; text-align: center;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion ul {text-align: left;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion ol {text-align: left;}
+24 silly fetchPackageMetaData 		  #container #mid404 #content #accordion li {font-size: 90%;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion p {font-size: 95%; text-align: left;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion h3 {font-weight: bold;}
+24 silly fetchPackageMetaData 		  #container #mid404 #content #accordion h4 {font-weight: bold; font-style: italic; text-align: left;}
+24 silly fetchPackageMetaData 		  .content {display:none;}
+24 silly fetchPackageMetaData 		  .first {color: #ff6600;}
+24 silly fetchPackageMetaData 		  .second {color: #3b5998;}
+24 silly fetchPackageMetaData 		  .third {color: #198c19;}
+24 silly fetchPackageMetaData 		  .code { background-color: #e5e5e5; border: 2px solid #ede1d1; padding: 5px 5px 5px 5px; text-align: left;}
+24 silly fetchPackageMetaData 		  .shell{border: 2px solid gray; background-color: black; color: white; text-align: left;}
+24 silly fetchPackageMetaData         </style>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </head>
+24 silly fetchPackageMetaData <body>
+24 silly fetchPackageMetaData <div id="container">
+24 silly fetchPackageMetaData         <div id="top404"></div>
+24 silly fetchPackageMetaData         <div id="mid404">
+24 silly fetchPackageMetaData                 <div id="xxx"><img src="/cgi-sys/images/x.png" alt="" /></div>
+24 silly fetchPackageMetaData         <div id="content">
+24 silly fetchPackageMetaData             <div id="errorcode">ERROR 404 - PAGE NOT FOUND</div>
+24 silly fetchPackageMetaData               <div id="faq_container">
+24 silly fetchPackageMetaData 					 <div id="accordion">
+24 silly fetchPackageMetaData 					 	<div id="why">
+24 silly fetchPackageMetaData 						 <h3><a class="expander" href=#>Why am I seeing this page?</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 									<p>404 means the file is not found. If you have already uploaded the file then the name may be misspelled or it is in a different folder.</p>
+24 silly fetchPackageMetaData 									<h4><u>Other Possible Causes</u></h4>
+24 silly fetchPackageMetaData 									<p>You may get a 404 error for images because you have Hot Link Protection turned on and the domain is not on the list of authorized domains.</p>
+24 silly fetchPackageMetaData 									<p>If you go to your temporary url (http://ip/~username/) and get this error, there maybe a problem with the rule set stored in an .htaccess file. You can try renaming that file to .htaccess-backup and refreshing the site to see if that resolves the issue.</p>
+24 silly fetchPackageMetaData 									<p>It is also possible that you have inadvertently deleted your document root or the your account may need to be recreated. Either way, please contact your web host immediately.</p>
+24 silly fetchPackageMetaData 									<p>Are you using WordPress? See the Section on 404 errors after clicking a link in WordPress.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="spell">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>How to find the correct spelling and folder</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 								<h4><u>Missing or Broken Files</u></h4>
+24 silly fetchPackageMetaData 								<p>When you get a 404 error be sure to check the URL that you are attempting to use in your browser.This tells the server what resource it should attempt to request.</p>
+24 silly fetchPackageMetaData 									<blockquote class="code">http://example.com/example/Example/help.html</blockquote>
+24 silly fetchPackageMetaData 								<p>In this example the file must be in public_html/example/Example/</p>
+24 silly fetchPackageMetaData 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>e</strong>xample and <strong>E</strong>xample are not the same locations.</p>
+24 silly fetchPackageMetaData 								<p>For addon domains, the file must be in public_html/addondomain.com/example/Example/ and the names are case-sensitive.</p>
+24 silly fetchPackageMetaData 								<h4><u>Broken Image</u></h4>
+24 silly fetchPackageMetaData 								<p>When you have a missing image on your site you may see a box on your page with with a red <span style="color:#FF0000;"><strong>X</strong></span> where the image is missing. Right click on the <span style="color:#FF0000;"><strong>X</strong></span> and choose Properties. The properties will tell you the path and file name that cannot be found.</p>
+24 silly fetchPackageMetaData 								<p>This varies by browser, if you do not see a box on your page with a red <span style="color:#FF0000;"><strong>X</strong></span> try right clicking on the page, then select View Page Info, and goto the Media Tab.</p>
+24 silly fetchPackageMetaData 									<blockquote class="code">http://example.com/cgi-sys/images/banner.PNG</blockquote>
+24 silly fetchPackageMetaData 								<p>In this example the image file must be in public_html/cgi-sys/images/</p>
+24 silly fetchPackageMetaData 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>PNG</strong> and <strong>png</strong> are not the same locations.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="wp">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>404 Errors After Clicking WordPress Links</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 									<p>When working with WordPress, 404 Page Not Found errors can often occur when a new theme has been activated or when the rewrite rules in the .htaccess file have been altered.</p>
+24 silly fetchPackageMetaData 									<p>When you encounter a 404 error in WordPress, you have two options for correcting it.</p>
+24 silly fetchPackageMetaData 								<h4><u>Option 1: Correct the Permalinks</u></h4>
+24 silly fetchPackageMetaData 									<ol>
+24 silly fetchPackageMetaData 										<li>Log in to WordPress.</li>
+24 silly fetchPackageMetaData 										<li>From the left-hand navigation menu in WordPress, click&nbsp;<strong>Settings</strong> &gt; <strong>Permalinks</strong> (Note the current setting. If you are using a custom structure, copy or save the custom structure somewhere.)</li>
+24 silly fetchPackageMetaData 										<li>Select&nbsp; <strong>Default</strong>.</li>
+24 silly fetchPackageMetaData 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+24 silly fetchPackageMetaData 										<li>Change the settings back to the previous configuration (before you selected Default). Put the custom structure back if you had one.</li>
+24 silly fetchPackageMetaData 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+24 silly fetchPackageMetaData 									</ol>
+24 silly fetchPackageMetaData 								<p>This will reset the permalinks and fix the issue in many cases. If this doesn't work, you may need to edit your .htaccess file directly.</p>
+24 silly fetchPackageMetaData 								<h4><u>Option 2: Modify the .htaccess File</u></h4>
+24 silly fetchPackageMetaData 									<p>Add the following snippet of code<em> </em>to the top of your .htaccess file:</p>
+24 silly fetchPackageMetaData 									<div class="code">
+24 silly fetchPackageMetaData 									<p>
+24 silly fetchPackageMetaData 										# BEGIN WordPress<br>
+24 silly fetchPackageMetaData 										&lt;IfModule mod_rewrite.c&gt;<br>
+24 silly fetchPackageMetaData 										RewriteEngine On<br>
+24 silly fetchPackageMetaData 										RewriteBase /<br>
+24 silly fetchPackageMetaData 										RewriteRule ^index.php$ - [L]<br>
+24 silly fetchPackageMetaData 										RewriteCond %{REQUEST_FILENAME} !-f<br>
+24 silly fetchPackageMetaData 										RewriteCond %{REQUEST_FILENAME} !-d<br>
+24 silly fetchPackageMetaData 										RewriteRule . /index.php [L]<br>
+24 silly fetchPackageMetaData 										&lt;/IfModule&gt;<br>
+24 silly fetchPackageMetaData 										# End WordPress
+24 silly fetchPackageMetaData 									</p>
+24 silly fetchPackageMetaData 									</div>
+24 silly fetchPackageMetaData 								<p>If your blog is showing the wrong domain name in links, redirecting to another site, or is missing images and style, these are all usually related to the same problem: you have the wrong domain name configured in your WordPress blog.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="edit_access">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>How to modify your .htaccess file</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 								<p>The .htaccess file contains directives (instructions) that tell the server how to behave in certain scenarios and directly affect how your website functions.</p>
+24 silly fetchPackageMetaData 								<p>Redirects and rewriting URLs are two very common directives found in a .htaccess file, and many scripts such as WordPress, Drupal, Joomla and Magento add directives to the .htaccess so those scripts can function.</p>
+24 silly fetchPackageMetaData 								<p>It is possible that you may need to edit the .htaccess file at some point, for various reasons.This section covers how to edit the file in cPanel, but not what may need to be changed.(You may need to consult other articles and resources for that information.)</p>
+24 silly fetchPackageMetaData 								<h4><u>There are Many Ways to Edit a .htaccess File</u></h4>
+24 silly fetchPackageMetaData 									<ul>
+24 silly fetchPackageMetaData 										<li>Edit the file on your computer and upload it to the server via FTP</li>
+24 silly fetchPackageMetaData 										<li>Use an FTP program's Edit Mode</li>
+24 silly fetchPackageMetaData 										<li>Use SSH and a text editor</li>
+24 silly fetchPackageMetaData 										<li>Use the File Manager in cPanel</li>
+24 silly fetchPackageMetaData 									</ul>
+24 silly fetchPackageMetaData 								<p>The easiest way to edit a .htaccess file for most people is through the File Manager in cPanel.</p>
+24 silly fetchPackageMetaData 								<h4><u>How to Edit .htaccess files in cPanel's File Manager</u></h4>
+24 silly fetchPackageMetaData 								<p>Before you do anything, it is suggested that you backup your website so that you can revert back to a previous version if something goes wrong.</p>
+24 silly fetchPackageMetaData 								<h4><u>Open the File Manager</u></h4>
+24 silly fetchPackageMetaData 								<ol>
+24 silly fetchPackageMetaData 									<li>Log into cPanel.</li>
+24 silly fetchPackageMetaData 									<li>In the Files section, click on the <strong>File Manager</strong> icon.</li>
+24 silly fetchPackageMetaData 									<li>Check the box for&nbsp;<strong>Document Root for</strong> and select the domain name you wish to access from the drop-down menu.</li>
+24 silly fetchPackageMetaData 									<li>Make sure&nbsp;<strong>Show Hidden Files (dotfiles)</strong>" is checked.</li>
+24 silly fetchPackageMetaData 									<li>Click&nbsp;<strong>Go</strong>. The File Manager will open in a new tab or window.</li>
+24 silly fetchPackageMetaData 									<li>Look for the .htaccess file in the list of files. You may need to scroll to find it.</li>
+24 silly fetchPackageMetaData 								</ol>
+24 silly fetchPackageMetaData 								<h4><u>To Edit the .htaccess File</u></h4>
+24 silly fetchPackageMetaData 								<ol>
+24 silly fetchPackageMetaData 									<li>Right click on the <strong>.htaccess file</strong> and click&nbsp;<strong>Code Edit</strong> from the menu. Alternatively, you can click on the icon for the .htaccess file and then click on the <strong>Code Editor</strong> icon at the top of the page.</li>
+24 silly fetchPackageMetaData 									<li>A dialogue box may appear asking you about encoding. Just click&nbsp;<strong>Edit</strong> to continue. The editor will open in a new window.</li>
+24 silly fetchPackageMetaData 									<li>Edit the file as needed.</li>
+24 silly fetchPackageMetaData 									<li>Click&nbsp;<strong>Save Changes</strong> in the upper right hand corner when done. The changes will be saved.</li>
+24 silly fetchPackageMetaData 									<li>Test your website to make sure your changes were successfully saved. If not, correct the error or revert back to the previous version until your site works again.</li>
+24 silly fetchPackageMetaData 									<li>Once complete, you can click&nbsp;<strong>Close</strong> to close the File Manager window.</li>
+24 silly fetchPackageMetaData 								</ol>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 					</div>
+24 silly fetchPackageMetaData 				</div>
+24 silly fetchPackageMetaData         </div>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData         <div style="clear:left;"></div>
+24 silly fetchPackageMetaData         </div>
+24 silly fetchPackageMetaData         <div id="bottom404"></div>
+24 silly fetchPackageMetaData </div>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     <script type="text/javascript">
+24 silly fetchPackageMetaData         $(function () {
+24 silly fetchPackageMetaData             $('.expander').simpleexpand();
+24 silly fetchPackageMetaData             prettyPrint();
+24 silly fetchPackageMetaData         });
+24 silly fetchPackageMetaData     </script>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </body>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </html>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     at Object.parse (native)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:23)
+24 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:218:7
+24 silly fetchPackageMetaData     at Gunzip.onEnd (zlib.js:227:5)
+24 silly fetchPackageMetaData     at emitNone (events.js:91:20)
+24 silly fetchPackageMetaData     at Gunzip.emit (events.js:185:7)
+24 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:974:12)
+24 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+24 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+24 silly fetchPackageMetaData  error for http-server SyntaxError: Unexpected token < in JSON at position 0
+24 silly fetchPackageMetaData <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+24 silly fetchPackageMetaData <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+24 silly fetchPackageMetaData <head profile="http://gmpg.org/xfn/11">
+24 silly fetchPackageMetaData         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+24 silly fetchPackageMetaData         <title>404 - PAGE NOT FOUND</title>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData 				<!-- Add Slide Outs -->
+24 silly fetchPackageMetaData 				<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+24 silly fetchPackageMetaData 				<script src="/cgi-sys/js/simple-expand.min.js"></script>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData         <style type="text/css">
+24 silly fetchPackageMetaData         body{padding:0;margin:0;font-family:helvetica;}
+24 silly fetchPackageMetaData         #container{margin:20px auto;width:868px;}
+24 silly fetchPackageMetaData         #container #top404{background-image:url('/cgi-sys/images/404top_w.jpg');background-repeat:no-repeat;width:868px;height:168px;}
+24 silly fetchPackageMetaData         #container #mid404{background-image:url('/cgi-sys/images/404mid.gif');background-repeat:repeat-y;width:868px;}
+24 silly fetchPackageMetaData         #container #mid404 #gatorbottom{position:relative;left:39px;float:left;}
+24 silly fetchPackageMetaData         #container #mid404 #xxx{float:left;padding:40px 397px 10px; margin: auto auto -10px auto}
+24 silly fetchPackageMetaData         #container #mid404 #content{float:left;text-align:center;width:868px;}
+24 silly fetchPackageMetaData         #container #mid404 #content #errorcode{font-size:30px;font-weight:800;}
+24 silly fetchPackageMetaData         #container #mid404 #content #banner{margin:20px 0 0 ;}
+24 silly fetchPackageMetaData         #container #mid404 #content #hostedby{font-weight:800;font-size:25px;font-style:italic;margin:20px 0 0;}
+24 silly fetchPackageMetaData         #container #mid404 #content #coupon{color:#AB0000;font-size:22px;font-style:italic;}
+24 silly fetchPackageMetaData         #container #mid404 #content #getstarted a{color:#AB0000;font-size:31px;font-style:italic;font-weight:800;}
+24 silly fetchPackageMetaData         #container #mid404 #content #getstarted {margin:0 0 35px;}
+24 silly fetchPackageMetaData         #container #bottom404{background-image:url('/cgi-sys/images/404bottom.gif');background-repeat:no-repeat;width:868px;height:14px;}
+24 silly fetchPackageMetaData         #container #mid404 #content #faq_container {margin: 5px 0 5px 0; padding: 10px 0 10px 0; clear:both;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion{font-size: 90%; width: 650px; min-height: 100px; margin: 0 auto; text-align: center;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion ul {text-align: left;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion ol {text-align: left;}
+24 silly fetchPackageMetaData 		  #container #mid404 #content #accordion li {font-size: 90%;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion p {font-size: 95%; text-align: left;}
+24 silly fetchPackageMetaData         #container #mid404 #content #accordion h3 {font-weight: bold;}
+24 silly fetchPackageMetaData 		  #container #mid404 #content #accordion h4 {font-weight: bold; font-style: italic; text-align: left;}
+24 silly fetchPackageMetaData 		  .content {display:none;}
+24 silly fetchPackageMetaData 		  .first {color: #ff6600;}
+24 silly fetchPackageMetaData 		  .second {color: #3b5998;}
+24 silly fetchPackageMetaData 		  .third {color: #198c19;}
+24 silly fetchPackageMetaData 		  .code { background-color: #e5e5e5; border: 2px solid #ede1d1; padding: 5px 5px 5px 5px; text-align: left;}
+24 silly fetchPackageMetaData 		  .shell{border: 2px solid gray; background-color: black; color: white; text-align: left;}
+24 silly fetchPackageMetaData         </style>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </head>
+24 silly fetchPackageMetaData <body>
+24 silly fetchPackageMetaData <div id="container">
+24 silly fetchPackageMetaData         <div id="top404"></div>
+24 silly fetchPackageMetaData         <div id="mid404">
+24 silly fetchPackageMetaData                 <div id="xxx"><img src="/cgi-sys/images/x.png" alt="" /></div>
+24 silly fetchPackageMetaData         <div id="content">
+24 silly fetchPackageMetaData             <div id="errorcode">ERROR 404 - PAGE NOT FOUND</div>
+24 silly fetchPackageMetaData               <div id="faq_container">
+24 silly fetchPackageMetaData 					 <div id="accordion">
+24 silly fetchPackageMetaData 					 	<div id="why">
+24 silly fetchPackageMetaData 						 <h3><a class="expander" href=#>Why am I seeing this page?</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 									<p>404 means the file is not found. If you have already uploaded the file then the name may be misspelled or it is in a different folder.</p>
+24 silly fetchPackageMetaData 									<h4><u>Other Possible Causes</u></h4>
+24 silly fetchPackageMetaData 									<p>You may get a 404 error for images because you have Hot Link Protection turned on and the domain is not on the list of authorized domains.</p>
+24 silly fetchPackageMetaData 									<p>If you go to your temporary url (http://ip/~username/) and get this error, there maybe a problem with the rule set stored in an .htaccess file. You can try renaming that file to .htaccess-backup and refreshing the site to see if that resolves the issue.</p>
+24 silly fetchPackageMetaData 									<p>It is also possible that you have inadvertently deleted your document root or the your account may need to be recreated. Either way, please contact your web host immediately.</p>
+24 silly fetchPackageMetaData 									<p>Are you using WordPress? See the Section on 404 errors after clicking a link in WordPress.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="spell">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>How to find the correct spelling and folder</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 								<h4><u>Missing or Broken Files</u></h4>
+24 silly fetchPackageMetaData 								<p>When you get a 404 error be sure to check the URL that you are attempting to use in your browser.This tells the server what resource it should attempt to request.</p>
+24 silly fetchPackageMetaData 									<blockquote class="code">http://example.com/example/Example/help.html</blockquote>
+24 silly fetchPackageMetaData 								<p>In this example the file must be in public_html/example/Example/</p>
+24 silly fetchPackageMetaData 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>e</strong>xample and <strong>E</strong>xample are not the same locations.</p>
+24 silly fetchPackageMetaData 								<p>For addon domains, the file must be in public_html/addondomain.com/example/Example/ and the names are case-sensitive.</p>
+24 silly fetchPackageMetaData 								<h4><u>Broken Image</u></h4>
+24 silly fetchPackageMetaData 								<p>When you have a missing image on your site you may see a box on your page with with a red <span style="color:#FF0000;"><strong>X</strong></span> where the image is missing. Right click on the <span style="color:#FF0000;"><strong>X</strong></span> and choose Properties. The properties will tell you the path and file name that cannot be found.</p>
+24 silly fetchPackageMetaData 								<p>This varies by browser, if you do not see a box on your page with a red <span style="color:#FF0000;"><strong>X</strong></span> try right clicking on the page, then select View Page Info, and goto the Media Tab.</p>
+24 silly fetchPackageMetaData 									<blockquote class="code">http://example.com/cgi-sys/images/banner.PNG</blockquote>
+24 silly fetchPackageMetaData 								<p>In this example the image file must be in public_html/cgi-sys/images/</p>
+24 silly fetchPackageMetaData 								<p>Notice that the <strong>CaSe</strong> is important in this example. On platforms that enforce case-sensitivity <strong>PNG</strong> and <strong>png</strong> are not the same locations.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="wp">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>404 Errors After Clicking WordPress Links</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 									<p>When working with WordPress, 404 Page Not Found errors can often occur when a new theme has been activated or when the rewrite rules in the .htaccess file have been altered.</p>
+24 silly fetchPackageMetaData 									<p>When you encounter a 404 error in WordPress, you have two options for correcting it.</p>
+24 silly fetchPackageMetaData 								<h4><u>Option 1: Correct the Permalinks</u></h4>
+24 silly fetchPackageMetaData 									<ol>
+24 silly fetchPackageMetaData 										<li>Log in to WordPress.</li>
+24 silly fetchPackageMetaData 										<li>From the left-hand navigation menu in WordPress, click&nbsp;<strong>Settings</strong> &gt; <strong>Permalinks</strong> (Note the current setting. If you are using a custom structure, copy or save the custom structure somewhere.)</li>
+24 silly fetchPackageMetaData 										<li>Select&nbsp; <strong>Default</strong>.</li>
+24 silly fetchPackageMetaData 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+24 silly fetchPackageMetaData 										<li>Change the settings back to the previous configuration (before you selected Default). Put the custom structure back if you had one.</li>
+24 silly fetchPackageMetaData 										<li>Click&nbsp;<strong>Save Settings</strong>.</li>
+24 silly fetchPackageMetaData 									</ol>
+24 silly fetchPackageMetaData 								<p>This will reset the permalinks and fix the issue in many cases. If this doesn't work, you may need to edit your .htaccess file directly.</p>
+24 silly fetchPackageMetaData 								<h4><u>Option 2: Modify the .htaccess File</u></h4>
+24 silly fetchPackageMetaData 									<p>Add the following snippet of code<em> </em>to the top of your .htaccess file:</p>
+24 silly fetchPackageMetaData 									<div class="code">
+24 silly fetchPackageMetaData 									<p>
+24 silly fetchPackageMetaData 										# BEGIN WordPress<br>
+24 silly fetchPackageMetaData 										&lt;IfModule mod_rewrite.c&gt;<br>
+24 silly fetchPackageMetaData 										RewriteEngine On<br>
+24 silly fetchPackageMetaData 										RewriteBase /<br>
+24 silly fetchPackageMetaData 										RewriteRule ^index.php$ - [L]<br>
+24 silly fetchPackageMetaData 										RewriteCond %{REQUEST_FILENAME} !-f<br>
+24 silly fetchPackageMetaData 										RewriteCond %{REQUEST_FILENAME} !-d<br>
+24 silly fetchPackageMetaData 										RewriteRule . /index.php [L]<br>
+24 silly fetchPackageMetaData 										&lt;/IfModule&gt;<br>
+24 silly fetchPackageMetaData 										# End WordPress
+24 silly fetchPackageMetaData 									</p>
+24 silly fetchPackageMetaData 									</div>
+24 silly fetchPackageMetaData 								<p>If your blog is showing the wrong domain name in links, redirecting to another site, or is missing images and style, these are all usually related to the same problem: you have the wrong domain name configured in your WordPress blog.</p>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 						<div id="edit_access">
+24 silly fetchPackageMetaData 						<h3><a class="expander" href=#>How to modify your .htaccess file</a></h3>
+24 silly fetchPackageMetaData 							<div class="content">
+24 silly fetchPackageMetaData 								<p>The .htaccess file contains directives (instructions) that tell the server how to behave in certain scenarios and directly affect how your website functions.</p>
+24 silly fetchPackageMetaData 								<p>Redirects and rewriting URLs are two very common directives found in a .htaccess file, and many scripts such as WordPress, Drupal, Joomla and Magento add directives to the .htaccess so those scripts can function.</p>
+24 silly fetchPackageMetaData 								<p>It is possible that you may need to edit the .htaccess file at some point, for various reasons.This section covers how to edit the file in cPanel, but not what may need to be changed.(You may need to consult other articles and resources for that information.)</p>
+24 silly fetchPackageMetaData 								<h4><u>There are Many Ways to Edit a .htaccess File</u></h4>
+24 silly fetchPackageMetaData 									<ul>
+24 silly fetchPackageMetaData 										<li>Edit the file on your computer and upload it to the server via FTP</li>
+24 silly fetchPackageMetaData 										<li>Use an FTP program's Edit Mode</li>
+24 silly fetchPackageMetaData 										<li>Use SSH and a text editor</li>
+24 silly fetchPackageMetaData 										<li>Use the File Manager in cPanel</li>
+24 silly fetchPackageMetaData 									</ul>
+24 silly fetchPackageMetaData 								<p>The easiest way to edit a .htaccess file for most people is through the File Manager in cPanel.</p>
+24 silly fetchPackageMetaData 								<h4><u>How to Edit .htaccess files in cPanel's File Manager</u></h4>
+24 silly fetchPackageMetaData 								<p>Before you do anything, it is suggested that you backup your website so that you can revert back to a previous version if something goes wrong.</p>
+24 silly fetchPackageMetaData 								<h4><u>Open the File Manager</u></h4>
+24 silly fetchPackageMetaData 								<ol>
+24 silly fetchPackageMetaData 									<li>Log into cPanel.</li>
+24 silly fetchPackageMetaData 									<li>In the Files section, click on the <strong>File Manager</strong> icon.</li>
+24 silly fetchPackageMetaData 									<li>Check the box for&nbsp;<strong>Document Root for</strong> and select the domain name you wish to access from the drop-down menu.</li>
+24 silly fetchPackageMetaData 									<li>Make sure&nbsp;<strong>Show Hidden Files (dotfiles)</strong>" is checked.</li>
+24 silly fetchPackageMetaData 									<li>Click&nbsp;<strong>Go</strong>. The File Manager will open in a new tab or window.</li>
+24 silly fetchPackageMetaData 									<li>Look for the .htaccess file in the list of files. You may need to scroll to find it.</li>
+24 silly fetchPackageMetaData 								</ol>
+24 silly fetchPackageMetaData 								<h4><u>To Edit the .htaccess File</u></h4>
+24 silly fetchPackageMetaData 								<ol>
+24 silly fetchPackageMetaData 									<li>Right click on the <strong>.htaccess file</strong> and click&nbsp;<strong>Code Edit</strong> from the menu. Alternatively, you can click on the icon for the .htaccess file and then click on the <strong>Code Editor</strong> icon at the top of the page.</li>
+24 silly fetchPackageMetaData 									<li>A dialogue box may appear asking you about encoding. Just click&nbsp;<strong>Edit</strong> to continue. The editor will open in a new window.</li>
+24 silly fetchPackageMetaData 									<li>Edit the file as needed.</li>
+24 silly fetchPackageMetaData 									<li>Click&nbsp;<strong>Save Changes</strong> in the upper right hand corner when done. The changes will be saved.</li>
+24 silly fetchPackageMetaData 									<li>Test your website to make sure your changes were successfully saved. If not, correct the error or revert back to the previous version until your site works again.</li>
+24 silly fetchPackageMetaData 									<li>Once complete, you can click&nbsp;<strong>Close</strong> to close the File Manager window.</li>
+24 silly fetchPackageMetaData 								</ol>
+24 silly fetchPackageMetaData 							</div>
+24 silly fetchPackageMetaData 						</div>
+24 silly fetchPackageMetaData 					</div>
+24 silly fetchPackageMetaData 				</div>
+24 silly fetchPackageMetaData         </div>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData         <div style="clear:left;"></div>
+24 silly fetchPackageMetaData         </div>
+24 silly fetchPackageMetaData         <div id="bottom404"></div>
+24 silly fetchPackageMetaData </div>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     <script type="text/javascript">
+24 silly fetchPackageMetaData         $(function () {
+24 silly fetchPackageMetaData             $('.expander').simpleexpand();
+24 silly fetchPackageMetaData             prettyPrint();
+24 silly fetchPackageMetaData         });
+24 silly fetchPackageMetaData     </script>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </body>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData </html>
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     at Object.parse (native)
+24 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:23)
+24 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:218:7
+24 silly fetchPackageMetaData     at Gunzip.onEnd (zlib.js:227:5)
+24 silly fetchPackageMetaData     at emitNone (events.js:91:20)
+24 silly fetchPackageMetaData     at Gunzip.emit (events.js:185:7)
+24 silly fetchPackageMetaData     at endReadableNT (_stream_readable.js:974:12)
+24 silly fetchPackageMetaData     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+24 silly fetchPackageMetaData     at process._tickCallback (internal/process/next_tick.js:98:9)
+25 silly rollbackFailedOptional Starting
+26 verbose stack TypeError: Cannot read property 'path' of null
+26 verbose stack     at Object.Installer.rollbackFailedOptional (/usr/local/lib/node_modules/npm/lib/install.js:511:29)
+26 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:337:5
+26 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:294:5
+26 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:16:22
+27 verbose cwd /Users/jsbonso/Downloads/aurelia-start
+28 error Darwin 16.1.0
+29 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "http-server" "-g"
+30 error node v6.9.4
+31 error npm  v4.1.1
+32 error Cannot read property 'path' of null
+33 error If you need help, you may report this error at:
+33 error     <https://github.com/npm/npm/issues>
+34 verbose exit [ 1, true ]
