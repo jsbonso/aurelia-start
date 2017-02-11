@@ -1,5 +1,24 @@
-# aurelia-start
-Aurelia seed project
+# Overview
+An Aurelia seed project which contains all the required files that 
+helps you create your own Hello World Aurelia Application
+
+# Create your "Hello World" application
+
+1. First create a TypeScript file named: **app.ts** 
+2. Then copy and paste this code to the file:
+```
+export class App {
+  msg = "Hello World!";  
+}
+```
+
+3. Create an HTML file named: **app.html**
+4. Afterwards, copy and paste this code: 
+```
+<template>
+  <h1>${msg}</h1>
+</template>
+```
 
 # How to Run
 
